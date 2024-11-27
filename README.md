@@ -1,5 +1,5 @@
 # ThinkPad-E595-Hackintosh
- Hackintosh for ThinkPad E595/E495/T495
+ Hackintosh for ThinkPad E595/E495. Also works for T495 with a minor change of Audio-related stuff.
 
 
 ## Features
@@ -36,3 +36,4 @@ To enable audio output, the **VoodooHDA** kext must be manually loaded:
 1. Audio support from AppleALC
 2. Two-way AirDrop functionality
 3. Better battery life
+4. Readme in Chinese
