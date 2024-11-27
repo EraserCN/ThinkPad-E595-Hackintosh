@@ -12,7 +12,7 @@
 1. **Compatible Hardware**:
    - Laptop Model: ThinkPad E595
    - CPU: AMD Ryzen 5 3500U 4c8t
-   - Graphics: Integrated Vega 8
+   - Graphics: Integrated AMD Radeon Vega 8
    - Wifi Card: AX200(on the way)
    - SSD: SN580 512GB
 2. **macOS Version**: Tested with macOS Monterey.
@@ -31,6 +31,10 @@ To enable audio output, the **VoodooHDA** kext must be manually loaded:
    ```bash
    sudo kextload /path/to/VoodooHDA.kext
 4. add VoodooHDA Panel by clicking on VoodooHDA.prefPane
+
+## BIOS Settings
+- Disable: TPM, Secure Boot, Memory Protection
+- Enable: UEFI Only, AMD Virtualization
 
 ## Further Improvements
 1. Audio support from AppleALC
