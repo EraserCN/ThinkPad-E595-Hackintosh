@@ -5,14 +5,16 @@
 ## Features
 - **Working**: keyboard, trackpad, USB ports, and GPU acceleration.
 - **Partially Working**: Audio output (manual intervention required, see below).
-- **TBA**: Wi-Fi, Bluetooth (Until I have a capable Wifi Card)
+- **TBA**: Wi-Fi, Bluetooth, Sidecar, AirDrop, etc (Until I have a capable Wifi Card)
+- **Won't Work at All**: Fingerprint, iPhone Mirroring(T2 Chip required), DRM-related stuff
 
 ## Prerequisites
 1. **Compatible Hardware**:
    - Laptop Model: ThinkPad E595
    - CPU: AMD Ryzen 5 3500U 4c8t
    - Graphics: Integrated Vega 8
-   - Wifi Card: AX200(on delivery)
+   - Wifi Card: AX200(on the way)
+   - SSD: SN580 512GB
 2. **macOS Version**: Tested with macOS Monterey.
 
 
@@ -28,3 +30,9 @@ To enable audio output, the **VoodooHDA** kext must be manually loaded:
 3. Place the kext in the `EFI/OC/Kexts` folder or load it directly using `kextload`:
    ```bash
    sudo kextload /path/to/VoodooHDA.kext
+4. add VoodooHDA Panel by clicking on VoodooHDA.prefPane
+
+## Further Improvements
+1. Audio support from AppleALC
+2. Two-way AirDrop functionality
+3. Better battery life
