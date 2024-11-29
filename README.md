@@ -3,22 +3,39 @@
  
 ![macOS running](img/os.png)
 ![airplay](img/airplay.png)
+![laptop](img/tp.jpg)
 
 
-## Features
-- **Working**: keyboard, trackpad, USB ports, GPU acceleration, Wi-Fi, Bluetooth, Audio(**SEE BELOW**), AirPlay
-- **Untested**: Sidecar, AirDrop, HDMI, Type-C Display
-- **Won't Work at All**: Fingerprint, iPhone Mirroring(T2 Chip required), DRM-related stuff
 
 ## Prerequisites
-- **My Hardware**:
-   - Laptop Model: ThinkPad E595
-   - CPU: AMD Ryzen 5 3500U 4c8t
-   - Graphics: Integrated AMD Radeon Vega 8
-   - Wifi Card: AX200
-   - SSD: SN580 512GB
-   - Audio: Conexant CX8070
-- **macOS Version**: Tested with macOS Monterey.
+| **My Hardware**      |                      |
+|----------------------|----------------------|
+| Laptop Model         | ThinkPad E595        |
+| CPU                  | AMD Ryzen 5 3500U 4c8t |
+| Graphics             | Integrated AMD Radeon Vega 8(set to 2GB) |
+| Wi-Fi Card           | AX200                |
+| SSD                  | SN580 512GB          |
+| Audio                | Conexant CX8070      |
+| macOS   | 12.0-14.7 |
+
+| **Feature**          | **Status**           |
+|----------------------|----------------------|
+| Keyboard              | Working              |
+| Trackpad              | Working              |
+| USB Ports             | Working              |
+| GPU Acceleration      | Working              |
+| Wi-Fi                | Working              |
+| Bluetooth            | Working              |
+| Audio                | Partially Working(see below)             |
+| AirPlay              | Working              |
+| Sidecar              | Not Working             |
+| HDMI                 | Untested             |
+| Type-C Display       | Untested             |
+| Fingerprint          | Won't Work at All    |
+| AirDrop              | Won't Work at All    |
+| iPhone Mirroring     | Won't Work at All    |
+| DRM-related stuff    | Won't Work at All    |
+
 
 ## Fix Broken Audio
 After rebooting from Windows, we've noticed that Audio will be broken even though everything works fine on the Kext side. You need to use either way to fix it, see below.
@@ -36,6 +53,7 @@ After rebooting from Windows, we've noticed that Audio will be broken even thoug
 ## BIOS Settings
 - Disable: TPM, Secure Boot, Memory Protection
 - Enable: UEFI Only, AMD Virtualization, Hyper Threading
+- Set VRAM to no less than 1GB, or there might be some issues with Metal
 
 ## Further Improvements
 - ~~1. Audio support from AppleALC~~
