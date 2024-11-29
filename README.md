@@ -2,6 +2,7 @@
  Hackintosh for ThinkPad E595/E495. Also works for T495 with a minor change of Audio-related stuff.
  
 ![macOS running](img/os.png)
+![airplay](img/airplay.png)
 
 
 ## Features
