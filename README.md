@@ -5,7 +5,7 @@
 
 
 ## Features
-- **Working**: keyboard, trackpad, USB ports, Audio and GPU acceleration.
+- **Working**: keyboard, trackpad, USB ports, GPU acceleration, Audio(**SEE BELOW**)
 - **TBA**: Wi-Fi, Bluetooth, Sidecar, AirDrop, etc (Until I have a capable Wifi Card)
 - **Won't Work at All**: Fingerprint, iPhone Mirroring(T2 Chip required), DRM-related stuff
 
@@ -16,9 +16,16 @@
    - Graphics: Integrated AMD Radeon Vega 8
    - Wifi Card: AX200(TBA)
    - SSD: SN580 512GB
-   - Audio: Conexant C8070
+   - Audio: Conexant CX8070
 - **macOS Version**: Tested with macOS Monterey.
 
+## Fix Broken Audio
+After rebooting from Windows, we've noticed that Audio will be broken even though everything works fine on the Kext side. You need to use either way to fix it, see below.
+
+- Completely remove Windows(recommended, fuck MSFT)
+- After shutting down, reboot to bios, choose Power->Disable built-in battery, then plug in the AC adapter and boot to macOS
+- Physically disconnect the built-in battery
+- Cool down for a few hours before switching to macOS
 
 ## Installation Steps
 1. Clone or download this repository.
@@ -27,7 +34,7 @@
 
 ## BIOS Settings
 - Disable: TPM, Secure Boot, Memory Protection
-- Enable: UEFI Only, AMD Virtualization, Hyper Thread
+- Enable: UEFI Only, AMD Virtualization, Hyper Threading
 
 ## Further Improvements
 - ~~1. Audio support from AppleALC~~
