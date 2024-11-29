@@ -5,8 +5,8 @@
 
 
 ## Features
-- **Working**: keyboard, trackpad, USB ports, GPU acceleration, Audio(**SEE BELOW**)
-- **TBA**: Wi-Fi, Bluetooth, Sidecar, AirDrop, etc (Until I have a capable Wifi Card)
+- **Working**: keyboard, trackpad, USB ports, GPU acceleration, Wi-Fi, Bluetooth, Audio(**SEE BELOW**), AirPlay
+- **Untested**: Sidecar, AirDrop, HDMI, Type-C Display
 - **Won't Work at All**: Fingerprint, iPhone Mirroring(T2 Chip required), DRM-related stuff
 
 ## Prerequisites
@@ -14,7 +14,7 @@
    - Laptop Model: ThinkPad E595
    - CPU: AMD Ryzen 5 3500U 4c8t
    - Graphics: Integrated AMD Radeon Vega 8
-   - Wifi Card: AX200(TBA)
+   - Wifi Card: AX200
    - SSD: SN580 512GB
    - Audio: Conexant CX8070
 - **macOS Version**: Tested with macOS Monterey.
